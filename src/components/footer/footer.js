@@ -9,8 +9,8 @@ export default function Footer() {
         <Box sx={styles.footer.footerTopArea}>
           {menuItems.map(({ header, items }, i) => (
             <Box sx={styles.footer.menus} key={i}>
-              <Heading sx={styles.footer.heading}>{header}</Heading>
               <nav>
+                <Heading sx={styles.footer.heading}>{header}</Heading>
                 {items.map(({ path, label }, i) => (
                   <Link
                     path={path}
@@ -64,9 +64,10 @@ const styles = {
       width: "25%",
       display: "flex",
       flexDirection: "column",
-      // justifyContent: "center",
       // backgroundColor: "green",
+      // backgroundColor:
       alignItems: "center",
+      // justifyContent: "",
       // m: "5px",
     },
 
@@ -77,8 +78,6 @@ const styles = {
       mb: "10px",
       lineHeight: "1.35",
       // backgroundColor: "yellow",
-      mr: "20px",
-      alignItems: "flex-start",
     },
 
     link: {
@@ -87,6 +86,7 @@ const styles = {
       fontWeight: "body",
       mb: 2,
       cursor: "pointer",
+      // backgroundColor: "red",
       transition: "all 0.35s",
       display: "block",
       textDecoration: "none",

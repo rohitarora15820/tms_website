@@ -57,12 +57,12 @@ export default [
     header: "Services",
     items: [
       {
-        path: "https://extensionerp.com/analytics-and-insights/",
-        label: "Analytics & Insights",
-      },
-      {
         path: "https://extensionerp.com/consulting-services/",
         label: "Consulting",
+      },
+      {
+        path: "https://extensionerp.com/analytics-and-insights/",
+        label: "Analytics & Insights",
       },
       {
         path: "https://extensionerp.com/microservices-and-api/",
