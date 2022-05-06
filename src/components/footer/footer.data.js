@@ -1,97 +1,113 @@
 export default [
   {
-    header: 'About Us',
+    header: "Company",
     items: [
       {
-        path: '/',
-        label: 'Support Center',
+        path: "https://extensionerp.com/about/",
+        label: "About",
       },
       {
-        path: '/',
-        label: 'Customer Support',
+        path: "https://extensionerp.zohorecruit.com/jobs/Careers",
+        label: "Careers",
       },
       {
-        path: '/',
-        label: 'About Us',
+        path: "https://extensionerp.com/contact-us/",
+        label: "Contact Us",
       },
       {
-        path: '/',
-        label: 'Copyright',
+        path: "https://extensionerp.com/case-studies/",
+        label: "Case Studies",
       },
       {
-        path: '/',
-        label: 'Popular Campaign',
+        path: "https://extensionerp.com/blogs/",
+        label: "Insights",
       },
     ],
   },
   {
-    header: 'Our Information',
+    header: "Platforms",
     items: [
       {
-        path: '/',
-        label: 'Return Policy ',
+        path: "https://extensionerp.com/zoho-one/",
+        label: "Zoho One ",
       },
       {
-        path: '/',
-        label: 'Privacy Policy',
+        path: "https://extensionerp.com/zoho-crm/",
+        label: "Zoho CRM",
       },
       {
-        path: '/',
-        label: 'Terms & Conditions',
+        path: "https://extensionerp.com/erpnext/",
+        label: "ERPNext",
       },
       {
-        path: '/',
-        label: 'Site Map',
+        path: "https://extensionerp.com/mobile-app/",
+        label: "Mobile App",
       },
       {
-        path: '/',
-        label: 'Store Hours',
+        path: "https://extensionerp.com/digital-ocean/",
+        label: "Digital Ocean",
+      },
+      {
+        path: "https://extensionerp.com/shopify/",
+        label: "Shopify",
       },
     ],
   },
   {
-    header: 'My Account',
+    header: "Services",
     items: [
       {
-        path: '/',
-        label: 'Press inquiries',
+        path: "https://extensionerp.com/analytics-and-insights/",
+        label: "Analytics & Insights",
       },
       {
-        path: '/',
-        label: 'Social media ',
+        path: "https://extensionerp.com/consulting-services/",
+        label: "Consulting",
       },
       {
-        path: '/',
-        label: 'directories',
+        path: "https://extensionerp.com/microservices-and-api/",
+        label: "Microservices & API",
       },
       {
-        path: '/',
-        label: 'Images & B-roll',
+        path: "https://extensionerp.com/migration-services/",
+        label: "Migration",
       },
       {
-        path: '/',
-        label: 'Permissions',
+        path: "https://extensionerp.com/implementaion-services/",
+        label: "Implementation",
+      },
+      {
+        path: "https://extensionerp.com/training-services/",
+        label: "Training",
       },
     ],
   },
   {
-    header: 'Policy',
+    header: "Industries",
     items: [
       {
-        path: '/',
-        label: 'Application security',
+        path: "https://extensionerp.com/automobile/",
+        label: "Automobile",
       },
       {
-        path: '/',
-        label: 'Software principles',
+        path: "https://extensionerp.com/distribution/",
+        label: "Distribution",
       },
       {
-        path: '/',
-        label: 'Unwanted software policy',
+        path: "https://extensionerp.com/financial-services/",
+        label: "Financial",
       },
       {
-        path: '/',
-        label: 'Responsible supply chain',
+        path: "https://extensionerp.com/healthcare/",
+        label: "Healthcare",
+      },
+      {
+        path: "https://extensionerp.com/manufacturing/",
+        label: "Manufacturing",
+      },
+      {
+        path: "https://extensionerp.com/real-estate/",
+        label: "Real Estate",
       },
     ],
   },

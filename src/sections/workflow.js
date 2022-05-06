@@ -76,7 +76,7 @@ const styles = {
   },
   grid: {
     // marginLeft: "25%",
-
+    m: "5%",
     mb: -1,
     pt: 0,
     gridGap: "200px",
