@@ -22,15 +22,13 @@ const data = {
   features: [
     {
       id: 1,
-      imgSrc:
-        Notify,
+      imgSrc: Notify,
       altText: "Automatic tracking information notification",
       title: "Automatic tracking information notification",
     },
     {
       id: 2,
-      imgSrc:
-      Invoice,
+      imgSrc: Invoice,
       altText: "Auto generated invoices",
       title: "Auto generated invoices",
     },
@@ -42,35 +40,35 @@ const data = {
     },
     {
       id: 4,
-      imgSrc:Discount,
+      imgSrc: Discount,
       altText: "Price and quantity discount rules",
       title: "Price and quantity discount rules",
     },
 
+    // {
+    //   id: 5,
+    //   imgSrc: Deliver,
+    //   altText: "Customer profiles and shipping preferences",
+    //   title: "Customer profiles and shipping preferences",
+    // },
     {
       id: 5,
-      imgSrc: Deliver,
-      altText: "Customer profiles and shipping preferences",
-      title: "Customer profiles and shipping preferences",
-    },
-    {
-      id: 6,
       imgSrc: Customer,
       altText: "Customer support integrations",
       title: "Customer support integrations",
     },
     {
-      id: 7,
+      id: 6,
       imgSrc: Reports,
       altText: "Picklists & Reports",
       title: "Picklists & Reports",
     },
-    {
-      id: 8,
-      imgSrc:  Permissions,
-      altText: "User Permissions",
-      title: "User Permissions",
-    },
+    // {
+    //   id: 8,
+    //   imgSrc:  Permissions,
+    //   altText: "User Permissions",
+    //   title: "User Permissions",
+    // },
   ],
 };
 
@@ -139,7 +137,7 @@ const styles = {
   },
   thumbnail: {
     pl: [0, 5, 0, null, 7, 95],
-     pr: [0, 5, null, null, null, 75, 95],
+    pr: [0, 5, null, null, null, 75, 95],
     order: [2, null, null, 0],
     // height: "1000px",
     mr: "100px",
@@ -200,32 +198,18 @@ const styles = {
     m: "5px",
     flexDirection: "column",
 
-
-
-    
-
-
-
-   
-    
-    
-    
     // pl: [0, null, null, null, "35px", null, "55px", 6],
-
-
-     
 
     title: {
       // fontSize: 3,
-      // color: "heading_secondary", 
+      // color: "heading_secondary",
       // textAlign: "center",
-      // fontWeight: 700, 
+      // fontWeight: 700,
       fontSize: 2,
       color: "heading_secondary",
       lineHeight: 1.4,
       fontWeight: 700,
       m: "10px",
-    
     },
 
     subTitle: {
