@@ -127,6 +127,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-around",
     flexDirection: ["column", null, null, "row"],
+    // backgroundColor: "black",
     // ml: "100px",
     // width: "auto",
     // height: "1000px",
@@ -134,6 +135,7 @@ const styles = {
   thumbnailImg: {
     height: "760px",
     width: "479px",
+    // backgroundColor: "yellow",
   },
   thumbnail: {
     pl: [0, 5, 0, null, 7, 95],
@@ -141,6 +143,7 @@ const styles = {
     order: [2, null, null, 0],
     // height: "1000px",
     mr: "100px",
+    // backgroundColor
     // height: "800px",
     // layout: "fill",
   },
@@ -161,8 +164,10 @@ const styles = {
   },
   card: {
     display: "flex",
-    alignItems: "flex-start",
-    p: "1px",
+    // alignItems: "flex-start",
+    // backgroundColor: "red",
+    alignItems: "center",
+    // p: "1px",
     backgroundColor: "white",
     borderRadius: "10px",
     transition: "all 0.3s",
