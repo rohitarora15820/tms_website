@@ -76,16 +76,19 @@ const styles = {
   },
   grid: {
     // marginLeft: "25%",
-    m: "5%",
+    // m: "5%",
     mb: -1,
     pt: 0,
-    gridGap: "200px",
-
+    justifyContent: "space-between",
+    gridGap: "50px",
+    // backgroundColor: "black",
     gridTemplateColumns: ["repeat(1,25%)", "repeat(2,25%)", "repeat(3,25%)"],
+    overflow: "hidden",
   },
   card: {
     display: "flex",
     flexDirection: "column",
+    // backgroundColor: "yellow",
     position: "relative",
     textAlign: ["center", null, "left"],
     width: "100%",
