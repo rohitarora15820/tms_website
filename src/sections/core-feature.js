@@ -3,7 +3,7 @@ import { jsx, Container, Box, Grid, Text, Heading } from "theme-ui";
 import TextFeature from "components/text-feature";
 import Image from "components/image";
 // import { BsFillBellFill } from "react-icons/bs";
-import CoreFeatureThumb from "assets/core_feature.svg";
+import CoreFeatureThumb from "assets/core_feature.png";
 import Briefcase from "assets/core-feature/briefcase.svg";
 import Secure from "assets/core-feature/secure.svg";
 import Notify from "assets/core-feature/notify.svg";
@@ -133,14 +133,16 @@ const styles = {
     // height: "1000px",
   },
   thumbnailImg: {
-    height: "760px",
-    width: "479px",
+    height: "562px",
+    width: "750px",
     // backgroundColor: "yellow",
   },
   thumbnail: {
+
     pl: [0, 5, 0, null, 7, 95],
     pr: [0, 5, null, null, null, 75, 95],
     order: [2, null, null, 0],
+
     // height: "1000px",
     mr: "100px",
     // backgroundColor

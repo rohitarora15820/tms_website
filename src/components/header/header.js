@@ -8,6 +8,8 @@ import LogoWhite from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
+import { getRequest, getUser } from 'api/request';
+
 
 export default function Header({ className }) {
   return (
@@ -34,6 +36,13 @@ export default function Header({ className }) {
           </Flex>
 
           <Button
+          onClick={() => {
+            console.log('clicked');
+            getUser();
+          }
+          }
+        
+          
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
