@@ -2,7 +2,7 @@
 import { jsx, Heading, Box, Container, Text } from "theme-ui";
 import { Link } from "components/link";
 import menuItems from "./footer.data";
-import PatternBG  from "assets/patternBG.png";
+import PatternBG from "assets/patternBG.png";
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -59,6 +59,7 @@ const styles = {
       // pt: [7, null, 8],
       // p: "200px",
       // pb: ["10px", null, null, "20px"],
+
       // px: [0, null, null, null, 4],
     },
     menus: {
@@ -68,6 +69,7 @@ const styles = {
       // backgroundColor: "green",
       // backgroundColor:
       alignItems: "center",
+
       // justifyContent: "",
       // m: "5px",
     },
@@ -78,20 +80,32 @@ const styles = {
       fontWeight: "500",
       mb: "10px",
       lineHeight: "1.35",
+      "@media screen and (max-width:1220px)": {
+        // display: "block",
+        fontSize: "12px",
+        // mt: "50px",
+      },
+
       // backgroundColor: "yellow",
     },
 
     link: {
       fontSize: ["14px", null, 1],
+      "@media screen and (max-width:1220px)": {
+        fontSize: "10px",
+        lineHeight: 1,
+        mb: 1,
+        // p: 2,
+        // display: "block",
+        // mt: "50px",
+      },
       color: "text",
       fontWeight: "body",
-      mb: 2,
       cursor: "pointer",
       // backgroundColor: "red",
       transition: "all 0.35s",
       display: "block",
       textDecoration: "none",
-      lineHeight: [1.5, null, null, 1.6, 1.8],
       ":hover": {
         color: "primary",
       },
@@ -106,12 +120,12 @@ const styles = {
       backgroundPosition: "center center",
       backgroundSize: "cover",
       position: "relative",
-      mt:"50px",
+      mt: "50px",
       fontSize: ["14px", null, 1],
       width: "100%",
       textAlign: "center",
       p: ["20px 20px"],
-      
+
       color: "white",
       a: {
         textDecoration: "none",

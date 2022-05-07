@@ -84,10 +84,19 @@ const styles = {
     // backgroundColor: "black",
     gridTemplateColumns: ["repeat(1,25%)", "repeat(2,25%)", "repeat(3,25%)"],
     overflow: "hidden",
+    "@media screen and (max-width:1220px)": {
+      display: "block",
+      // mt: "50px",
+    },
   },
   card: {
     display: "flex",
+    // flexWrap: "none",
     flexDirection: "column",
+    "@media screen and (max-width:1220px)": {
+      // display: "block",
+      mt: "50px",
+    },
     // backgroundColor: "yellow",
     position: "relative",
     textAlign: ["center", null, "left"],
@@ -138,6 +147,7 @@ const styles = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    // backgroundColor: "red",
     mt: "-5px",
     title: {
       fontSize: [3, null, 4, null, null, 5],

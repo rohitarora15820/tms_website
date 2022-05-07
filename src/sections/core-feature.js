@@ -136,6 +136,10 @@ const styles = {
     height: "562px",
     width: "750px",
     // backgroundColor: "yellow",
+    "@media screen and (max-width:1220px)": {
+      display: "block",
+      // mt: "50px",
+    },
   },
   thumbnail: {
 
@@ -145,12 +149,27 @@ const styles = {
 
     // height: "1000px",
     mr: "100px",
-    // backgroundColor
+    // backgroundColor: "red",
+    "@media screen and (max-width:1220px)": {
+      // display: "block",
+      mr: 0,
+      alignItems: "center",
+      // mt: "50px",
+      // width: "100%",
+    },
     // height: "800px",
     // layout: "fill",
   },
   contentBox: {
     width: "35%",
+    "@media screen and (max-width:1220px)": {
+      width: "100%",
+      display: "block",
+      mr: 0,
+      alignItems: "center",
+      // mt: "50px",
+      // width: "100%",
+    },
     // pr: [0, null, "auto", null, null, 80],
     // pl: "auto",
     flexShrink: 0,

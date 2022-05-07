@@ -79,7 +79,7 @@ const styles = {
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "space-between",
-    // flexWrap: ["wrap", null, null, "nowrap"],
+    flexWrap: ["wrap", null, null, "nowrap"],
   },
   thumbnail: {
     mb: -2,
