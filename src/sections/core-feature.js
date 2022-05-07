@@ -135,7 +135,7 @@ const styles = {
   thumbnailImg: {
     height: "562px",
     width: "750px",
-    // backgroundColor: "yellow",
+    
     "@media screen and (max-width:1220px)": {
       display: "block",
       // mt: "50px",
