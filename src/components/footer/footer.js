@@ -2,6 +2,7 @@
 import { jsx, Heading, Box, Container, Text } from "theme-ui";
 import { Link } from "components/link";
 import menuItems from "./footer.data";
+import PatternBG  from "assets/patternBG.png";
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -99,12 +100,19 @@ const styles = {
       },
     },
     copyright: {
+      backgroundColor: "primary",
+      backgroundImage: `url(${PatternBG})`,
+      backgroundRepeat: `no-repeat`,
+      backgroundPosition: "center center",
+      backgroundSize: "cover",
+      position: "relative",
+      mt:"50px",
       fontSize: ["14px", null, 1],
       width: "100%",
       textAlign: "center",
       p: ["20px 20px"],
-      backgroundColor: "#FCFDFE",
-      color: "text",
+      
+      color: "white",
       a: {
         textDecoration: "none",
         color: "inherit",
