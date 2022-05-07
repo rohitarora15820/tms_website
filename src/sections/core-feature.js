@@ -133,8 +133,8 @@ const styles = {
     // height: "1000px",
   },
   thumbnailImg: {
-    height: "760px",
-    width: "479px",
+    height: "562px",
+    width: "750px",
     // backgroundColor: "yellow",
     "@media screen and (max-width:1220px)": {
       display: "block",
@@ -142,9 +142,11 @@ const styles = {
     },
   },
   thumbnail: {
+
     pl: [0, 5, 0, null, 7, 95],
     pr: [0, 5, null, null, null, 75, 95],
     order: [2, null, null, 0],
+
     // height: "1000px",
     mr: "100px",
     // backgroundColor: "red",
