@@ -48,14 +48,13 @@ export default function Banner() {
           </Heading>
           <Text as="p" variant="heroSecondary">
             Fulfil the expectations of your customers, not just their orders.
-          
           </Text>
           <Text as="p" variant="heroSecondary">
             <ul>
               <li>Powerful User Experience</li>
               <li>Multi-warehouse management​</li>
               <li>Customization and automation​</li>
-              <li>Ecommerce (B2B and B2C)</li>
+              <li>E-commerce (B2B and B2C)</li>
               <li>Setup order workflows for repetitive tasks</li>
             </ul>
           </Text>
