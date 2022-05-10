@@ -10,18 +10,18 @@ import ArrowEven from "assets/arrowEven.png";
 const data = [
   {
     id: 1,
-    title: "Remove manual constrictions",
-    text: "Bring all of your orders in one location to process them from start to finish and cut down upon manual and human mistakes",
+    title: "Flexible Mobile Service App",
+    text: "Customize our mobile app to your unique business requirements    Our Ticketing Management Mobile Application can be customized to your business needs. Add forms and different field types in your app and this gives you greater flexibility in having your technicians in the field fill out the information you require for any job. Configure the interaction your technicians have and what additional data they may want to sync to the field service software. ",
   },
   {
     id: 2,
-    title: "Supports your company’s growth",
-    text: ` Increased competition in today's market means that you need to choose tools that can constantly adapt to the growth of your company. Our Order Management System is a flexible tool that will go hand in hand with your growth.`,
+    title: "Complete Visibility And Control Of Daily Operations",
+    text: ` Give your technicians insight into parts and inventory from their App. Along with an integrated CRM and ERP system, technicians can find the quantity of parts and inventory. Technicians can quickly add parts to work orders for full expense tracking and have prices on the invoice when completed.   `,
   },
   {
     id: 3,
-    title: "Increases customer satisfaction",
-    text: "Ensures a business’s workflow runs smoothly by establishing efficient processes to keep it moving forward thus maintaining customer satisfaction and protecting a company’s reputation. Keep customers informed with email updates once orders have been dispatched.",
+    title: "Access Customer and Service History",
+    text: "Give your technicians access to historical information through the Ticketing Management App. Technicians can access the customer’s previous work orders, equipment, contract information, and repair notes to help them through service appointments. Speed up repair times with detailed service history, allowing your technicians to access years of history from within the mobile app.    ",
   },
 ];
 
@@ -102,30 +102,30 @@ const styles = {
     textAlign: ["center", null, "left"],
     width: "100%",
     mx: "auto",
-    "&::before": {
-      position: "absolute",
-      content: '""',
-      top: 0,
-      left: [0, null, null, null, null, 105, null, 250],
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: "center center",
-      width: 215,
-      height: 60,
-      opacity: 0.3,
-      "@media screen and (max-width:1220px)": {
-        display: "none",
-      },
-    },
-    "&:nth-of-type(2n-1)::before": {
-      backgroundImage: `url(${ArrowOdd})`,
-    },
-    "&:nth-of-type(2n)::before": {
-      backgroundImage: `url(${ArrowEven})`,
-      top: 17,
-    },
-    "&:last-child::before": {
-      display: "none",
-    },
+    // "&::before": {
+    //   position: "absolute",
+    //   content: '""',
+    //   top: 0,
+    //   left: [0, null, null, null, null, 105, null, 250],
+    //   backgroundRepeat: `no-repeat`,
+    //   backgroundPosition: "center center",
+    //   width: 215,
+    //   height: 60,
+    //   opacity: 0.3,
+    //   "@media screen and (max-width:1220px)": {
+    //     display: "none",
+    //   },
+    // },
+    // "&:nth-of-type(2n-1)::before": {
+    //   backgroundImage: `url(${ArrowOdd})`,
+    // },
+    // "&:nth-of-type(2n)::before": {
+    //   backgroundImage: `url(${ArrowEven})`,
+    //   top: 17,
+    // },
+    // "&:last-child::before": {
+    //   display: "none",
+    // },
   },
 
   iconBox: {

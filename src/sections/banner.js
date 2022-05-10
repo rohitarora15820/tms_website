@@ -44,19 +44,24 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Omni Channel Order Management System
+            Ticketing Management System App by Extension Technologies for your
+            field technicians
           </Heading>
-          <Text as="p" variant="heroSecondary">
+          {/* <Text as="p" variant="heroSecondary">
             Fulfil the expectations of your customers, not just their orders.
-          </Text>
+          </Text> */}
           <Text as="p" variant="heroSecondary">
-            <ul>
+            {/* <ul>
               <li>Powerful User Experience</li>
               <li>Multi-warehouse management​</li>
               <li>Customization and automation​</li>
               <li>E-commerce (B2B and B2C)</li>
               <li>Setup order workflows for repetitive tasks</li>
-            </ul>
+            </ul> */}
+            Our Ticketing Management Mobile App equips you with everything your
+            service business needs to become more efficient and more profitable.
+            It will empower your growing business so that you and your team
+            spend more time serving customers and less time pushing paper.
           </Text>
 
           <Flex>
