@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Box } from "theme-ui";
+import { useState } from "react";
 import {
   Label,
   Input,
@@ -62,6 +63,51 @@ const data3 = {
 // };
 
 export default function Dilog() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [source, setSource] = useState("");
+  const [organization, setOrganization] = useState("");
+  const [designation, setDesignation] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      mobile,
+      source,
+      organization,
+      designation,
+    };
+    submit();
+    console.log(data.name);
+  };
+  const submit = async () => {
+    // alert(name);
+    alert(JSON.stringify(name));
+    const response = await fetch(
+      "https://demo.extensionerp.com/api/resource/Lead",
+
+      {
+        method: "POST",
+        mode: "no-cors",
+
+        body: JSON.stringify({
+          lead_name: name,
+          email_id: email,
+          phone: mobile,
+          company_name: organization,
+          source: source,
+          designation: designation,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    // const data = await response.json();
+    console.log("hello");
+  };
   return (
     <section sx={{ variant: "section.securePayment" }}>
       <Box sx={styles.bgOverlay} />
@@ -99,7 +145,7 @@ export default function Dilog() {
             // btnNam={data2.btnName}
             // btnURL={data2.btnURL}
           />
-          <Box as="form" onSubmit={(e) => e.preventDefault()}>
+          <Box as="form" onSubmit={handleSubmit}>
             {/* <Label htmlFor="username">Username</Label> */}
             <Input
               name="name"
@@ -107,20 +153,32 @@ export default function Dilog() {
               // label="Full Name"
               placeholder="Full Name"
               mb={3}
+              // onChange={(text) => {
+              //   setName(text);
+              // }}
+              onChange={(e) => setName(e.target.value)}
             />
             {/* <Label htmlFor="password">Password</Label> */}
-            <Input name="email" id="email" placeholder="Email" mb={3} />
+            <Input
+              name="email"
+              id="email"
+              placeholder="Email"
+              mb={3}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <Input
               name="mobile"
               id="mobile"
               placeholder="Mobile Number"
               mb={3}
+              onChange={(e) => setMobile(e.target.value)}
             />
             <Input
               name="organization"
               id="organization"
               placeholder="Organization Name"
               mb={3}
+              onChange={(e) => setOrganization(e.target.value)}
             />
             {/* <Box>
             <Label mb={3}>
@@ -134,26 +192,30 @@ export default function Dilog() {
               id="source"
               placeholder="Select Source"
               mb={3}
+              onChange={(e) => setSource(e.target.value)}
             >
               <option value="" disabled selected hidden>
                 Select Source
               </option>
-              <option>Beep</option>
-              <option>Boop</option>
-              <option>Blip</option>
+              <option>Shopify</option>
+              <option>VTiger</option>
+              <option>Exhibition</option>
+              <option>Cold Calling</option>
             </Select>
             <Select
               name="designation"
               id="designation"
               defautValue="Boop"
               mb={3}
+              onChange={(e) => setDesignation(e.target.value)}
             >
               <option value="" disabled selected hidden>
                 Select Designation
               </option>
-              <option>Beep</option>
-              <option>Boop</option>
-              <option>Blip</option>
+              <option>Team Lead</option>
+              <option>General Manager</option>
+              <option>Functional Consultant</option>
+              <option>Director</option>
             </Select>
             {/* <Label htmlFor="comment">Comment</Label> */}
             {/* <Textarea name="comment" id="comment" rows={6} mb={3} /> */}
@@ -171,7 +233,15 @@ export default function Dilog() {
             {/* <Label>Slider</Label> */}
             {/* <Slider mb={3} /> */}
             {/* <button onClick={closeModal}>close</button> */}
-            <Button sx={styles.save}>Save</Button>
+            <Button
+              sx={styles.save}
+              // onClick={() => {
+              //   this.handleCollapse(submit());
+              // }}
+              type="submit"
+            >
+              Save
+            </Button>
           </Box>
         </Container>
       </Container>
@@ -299,3 +369,9 @@ const styles = {
   //   pr: [0, null, null, null, null, 6],
   // },
 };
+// export default function handler (req, res){
+//   if (req.method === 'GET'){
+//      res.status (200);
+//     }else if (req.method === 'POST'){
+//       const name=req.body.name
+//  }}
