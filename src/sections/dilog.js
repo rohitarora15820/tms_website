@@ -84,7 +84,7 @@ export default function Dilog() {
   };
   const submit = async () => {
     // alert(name);
-    alert(JSON.stringify(name));
+//     alert(JSON.stringify(name));
     const response = await fetch(
       "https://demo.extensionerp.com/api/resource/Lead",
 
